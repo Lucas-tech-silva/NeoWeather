@@ -141,7 +141,7 @@ function searchWeather(defaultCity = null) {
                 </div>
             `;
 
-    const apiKey = 'b4a03a6aa96e0d6750d6ee09b957cc08';
+    const apiKey = '79dc244482b45c0cb911a3c028b33f1b';
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=pt_br`;
 
     fetch(apiUrl)
