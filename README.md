@@ -1,6 +1,6 @@
 # 🌤️ NeoWeather
 
-**NeoWeather** é um site de previsão do tempo desenvolvido por mim com foco em **experiência do usuário (UX)**, **interface furista e intuitiva (UI)** e design responsivo. O projeto foi criado 100% do zero — desde a **identidade visual**, **layout**, até a **estrutura de código em HTML, CSS e JavaScript puro**.
+**NeoWeather** é um site de previsão do tempo desenvolvido por mim com foco em **experiência do usuário (UX)**, **interface furista e intuitiva (UI)** e design responsivo. O projeto foi criado 100% do zero — desde a **identidade visual**, **layout**, até a **estrutura de código em HTML, CSS e JavaScript**.
 
 <br><br>
 
