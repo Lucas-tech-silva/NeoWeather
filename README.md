@@ -1,6 +1,6 @@
 # 🌤️ NeoWeather
 
-**NeoWeather** é um site de previsão do tempo desenvolvido por mim com foco em **experiência do usuário (UX)**, **interface intuitiva (UI)** e design responsivo. O projeto foi criado 100% do zero — desde a **identidade visual**, **layout**, até a **estrutura de código em HTML, CSS e JavaScript puro**.
+**NeoWeather** é um site de previsão do tempo desenvolvido por mim com foco em **experiência do usuário (UX)**, **interface furista e intuitiva (UI)** e design responsivo. O projeto foi criado 100% do zero — desde a **identidade visual**, **layout**, até a **estrutura de código em HTML, CSS e JavaScript puro**.
 
 <br><br>
 
@@ -101,7 +101,7 @@ Desenvolvido por **Lucas Silva** 💻
 <br>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/l4pTdcif2QF3nCWSY/giphy.gif" alt="Clima animado" width="300" />
+  <img src="https://media1.tenor.com/m/GtDkRSPU9CgAAAAC/cloud-weather.gif" alt="Nuvem de clima " width="300" />
 </p>
 
 <br>
