@@ -95,8 +95,9 @@ Desenvolvido por **Lucas Silva** 💻
 ## 🎉 Fun Fact
 
 <p align="center">
-  ☀️ *Sabia que a previsão do tempo existe desde o século XIX, mas só com a internet e APIs ficou fácil para todo mundo acessar?*  
+  <i>🌤️ "Programar é dominar a arte da adaptação — assim como o clima que muda a todo instante, transformamos desafios em soluções que brilham como o sol após a tempestade." — Lucas Silva </i>
 </p>
+
 
 <br>
 
