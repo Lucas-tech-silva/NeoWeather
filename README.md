@@ -16,22 +16,6 @@
 
 ---
 
-## 🔒 Repositório Público
-
-Este projeto está público para que qualquer pessoa possa conferir, estudar e usar como referência.
-
-<br>
-
-<p align="center">
-  <a href="https://neo-weather-alpha.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Acessar NeoWeather">
-    <img src="https://img.shields.io/badge/Acessar%20o%20Site-NeoWeather-1E90FF?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Acessar o site NeoWeather" />
-  </a>
-</p>
-
-<br>
-
----
-
 ## 🚀 Tecnologias Utilizadas
 
 - 🔹 **HTML5** — estrutura semântica e organizada  
@@ -88,23 +72,13 @@ O site é totalmente responsivo, garantindo uma ótima experiência em dispositi
 
 ---
 
-## ⚠️ Sobre a Chave da API
-
-Por se tratar de um projeto frontend puro, a chave da API do OpenWeatherMap fica exposta no código. Recomenda-se:
-
-- Usar limites e restrições na chave via painel OpenWeatherMap  
-- Considerar o uso de backend para proteger a chave em projetos futuros  
-
-<br>
-
----
-
 ## 🛠️ Autor
 
 Desenvolvido por **Lucas Silva** 💻
 
-- GitHub: [https://github.com/Lucas-tech-silva](https://github.com/Lucas-tech-silva)  
-- LinkedIn: [https://www.linkedin.com/in/lucas-tech-silva/](https://www.linkedin.com/in/lucas-tech-silva/)
+- Portifolio [Ver Portifolio](https://portif-lio-nu-two.vercel.app/)  
+- GitHub: [Ver Perfil](https://github.com/Lucas-tech-silva)  
+- LinkedIn: [Ver LinkedIn](https://www.linkedin.com/in/lucassilva-developer/)
 
 <br>
 
