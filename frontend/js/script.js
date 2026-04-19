@@ -150,7 +150,7 @@ function searchWeather(defaultCity = null) {
                 </div>
             `;
 
-  const apiUrl = `http://localhost:3000/clima?cidade=${city}`;
+  const apiUrl = `https://neoweather.onrender.com/clima?cidade=${city}`;
 
   fetch(apiUrl)
     .then((response) => {
