@@ -1,7 +1,8 @@
 # 🌤️ NeoWeather
 
-> Aplicação Full Stack para consulta de previsão do tempo em tempo real, com foco em **foco em performance, integração de APIs e responsividade**.
+> Aplicação Full Stack para consulta de previsão do tempo em tempo real, com foco em **performance, integração de APIs e responsividade**.
 
+<br>
 <br>
 
 <div align="center">
@@ -13,6 +14,7 @@
 
 </div>
 
+<br>
 <br>
 
 <p align="center">
@@ -27,6 +29,8 @@
 
 ---
 
+<br>
+
 ## 🚀 Visão Geral
 
 O **NeoWeather** é uma aplicação full stack desenvolvida do zero para fornecer dados climáticos em tempo real de forma rápida, intuitiva e visualmente agradável.
@@ -34,6 +38,8 @@ O **NeoWeather** é uma aplicação full stack desenvolvida do zero para fornece
 O projeto também implementa uma arquitetura segura, garantindo que a **API Key não seja exposta no frontend**, seguindo boas práticas utilizadas em aplicações profissionais.
 
 ---
+
+<br>
 
 ## ✨ Principais Funcionalidades
 
@@ -46,6 +52,8 @@ O projeto também implementa uma arquitetura segura, garantindo que a **API Key 
 
 ---
 
+<br>
+
 ## 🧠 Desafios que resolvi
 
 * 🔥 Integração entre frontend e backend sem expor a API Key
@@ -57,6 +65,8 @@ O projeto também implementa uma arquitetura segura, garantindo que a **API Key 
 * 🧩 Correção de problemas de “Failed to fetch” em produção
 
 ---
+
+<br>
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -76,6 +86,8 @@ O projeto também implementa uma arquitetura segura, garantindo que a **API Key 
 
 ---
 
+<br>
+
 ## 🔐 Arquitetura da Aplicação
 
 Para garantir segurança e boas práticas, a aplicação utiliza um backend intermediário para proteger credenciais sensíveis.
@@ -91,6 +103,8 @@ Frontend → Backend → OpenWeather API
 * A chave da API permanece protegida no servidor
 
 📌 Essa abordagem segue boas práticas utilizadas em aplicações reais.
+
+<br>
 
 ---
 
@@ -114,6 +128,7 @@ NeoWeather/
 ```
 
 ---
+<br>
 
 ## ▶️ Como Executar Localmente
 
@@ -151,6 +166,8 @@ ou utilize o Live Server no VS Code.
 
 ---
 
+<br>
+
 ## 📱 Responsividade
 
 Aplicação adaptada para:
@@ -161,6 +178,8 @@ Aplicação adaptada para:
 
 ---
 
+<br>
+
 ## 📊 Melhorias Futuras
 
 * 📈 Gráficos de temperatura
@@ -170,15 +189,19 @@ Aplicação adaptada para:
 
 ---
 
+<br>
+
 ## 👨‍💻 Autor
 
 **Lucas Silva**
 
-* 🌐 Portfólio: [Clique aqui](https://portif-lio-nu-two.vercel.app/)
-* 💻 GitHub: [Clique aqui](https://github.com/Lucas-tech-silva)
-* 🔗 LinkedIn: [Clique aqui](https://www.linkedin.com/in/lucassilva-developer/)
+* 🌐 Portfólio: https://portif-lio-nu-two.vercel.app/
+* 💻 GitHub: https://github.com/Lucas-tech-silva
+* 🔗 LinkedIn: https://www.linkedin.com/in/lucassilva-developer/
 
 ---
+
+<br>
 
 ## 📌 Status
 
@@ -186,6 +209,8 @@ Aplicação adaptada para:
 🚀 Em constante evolução
 
 ---
+
+<br>
 
 ## 💡 Insight
 
