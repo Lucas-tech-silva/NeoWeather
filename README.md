@@ -2,6 +2,8 @@
 
 > Aplicação Full Stack para consulta de previsão do tempo em tempo real, com foco em **performance, integração de APIs e responsividade**.
 
+<br>
+
 <div align="center">
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
@@ -11,6 +13,7 @@
 
 </div>
 
+<br>
 
 <p align="center">
   <img src="frontend/assets/mockup/NEOWERTHER.png" alt="NeoWeather Preview" width="650" />
