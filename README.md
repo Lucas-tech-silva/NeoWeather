@@ -217,5 +217,5 @@ Aplicação adaptada para:
 ## 💡 Insight
 
 <p align="center">
-<p align="center"> <i> “Um projeto se torna profissional quando une arquitetura, performance e boas práticas reais de mercado.” </i> </p>
+<p align="center"> “Um projeto se torna profissional quando une arquitetura, performance e boas práticas reais de mercado.” </p>
 
