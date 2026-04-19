@@ -1,6 +1,6 @@
 # 🌤️ NeoWeather
 
-> Aplicação Full Stack para consulta de previsão do tempo em tempo real, com foco em **performance, UX/UI e segurança de API**.
+> Aplicação Full Stack para consulta de previsão do tempo em tempo real, com foco em **foco em performance, integração de APIs e responsividade**.
 
 <br>
 
