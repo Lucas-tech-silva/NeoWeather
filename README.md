@@ -199,6 +199,7 @@ Aplicação adaptada para:
 * 🌐 Portfólio: https://portif-lio-nu-two.vercel.app/
 * 💻 GitHub: https://github.com/Lucas-tech-silva
 * 🔗 LinkedIn: https://www.linkedin.com/in/lucassilva-developer/
+* 📧 Email: lucassilva1710@yahoo.com
 
 <br>
 
