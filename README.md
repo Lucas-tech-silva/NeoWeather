@@ -1,94 +1,88 @@
 # 🌤️ NeoWeather
 
-**NeoWeather** é uma aplicação de previsão do tempo desenvolvida com foco em **experiência do usuário (UX)**, **interface futurista e intuitiva (UI)** e design responsivo.
+> Aplicação Full Stack de previsão do tempo com foco em **UX/UI**, **performance** e **segurança de dados (API protegida)**.
 
-O projeto foi criado 100% do zero — desde a **identidade visual**, **layout**, até a **arquitetura full stack**, incluindo um backend para proteção da API.
-
-<br><br>
+<br>
 
 <p align="center">
-  <img src="frontend/assets/mockup/NEOWERTHER.png" alt="Mockup do site NeoWeather" width="600" />
+  <img src="frontend/assets/mockup/NEOWERTHER.png" alt="NeoWeather Preview" width="650" />
 </p>
 
 <p align="center">
-  <i>Aplicação responsiva, leve e intuitiva para acompanhar o clima em tempo real. ☀️🌧️🌙</i>
+  <i>Interface moderna, responsiva e intuitiva para consulta de clima em tempo real.</i>
 </p>
 
 <br>
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Sobre o Projeto
+
+O **NeoWeather** é uma aplicação desenvolvida do zero com o objetivo de entregar uma experiência rápida, visualmente agradável e funcional para consulta de dados climáticos.
+
+Além do front-end interativo, o projeto implementa uma **arquitetura full stack**, garantindo **segurança da API Key** e boas práticas utilizadas no mercado.
+
+---
+
+## ✨ Principais Diferenciais
+
+* 🔐 **Proteção da API Key** com backend (Node.js)
+* ⚡ **Requisições otimizadas** e resposta rápida
+* 🎨 Interface moderna com foco em UX/UI
+* 📱 **Totalmente responsivo** (mobile-first)
+* 🧱 Estrutura escalável e organizada
+* 🌐 Consumo de API real (OpenWeather)
+
+---
+
+## 🛠️ Tecnologias Utilizadas
 
 ### 🎨 Frontend
 
-* 🔹 **HTML5** — estrutura semântica e organizada
-* 🔹 **CSS3** — responsividade e design moderno
-* 🔹 **JavaScript (ES6+)** — manipulação do DOM e interatividade
+* **HTML5** — estrutura semântica
+* **CSS3** — layout moderno e responsivo
+* **JavaScript (ES6+)** — lógica e interatividade
 
 ### ⚙️ Backend
 
-* 🔹 **Node.js** — ambiente de execução JavaScript no servidor
-* 🔹 **Express** — criação de rotas e API
-* 🔹 **dotenv** — gerenciamento seguro de variáveis de ambiente
-* 🔹 **CORS** — comunicação entre front-end e back-end
+* **Node.js** — ambiente de execução
+* **Express** — criação de rotas e API
+* **dotenv** — variáveis de ambiente
+* **CORS** — comunicação segura
 
-### 🌐 API
+### 🌐 Integração
 
-* 🔹 **OpenWeatherMap API** — fornecimento de dados climáticos em tempo real
-
-<br>
+* **OpenWeatherMap API** — dados climáticos em tempo real
 
 ---
 
-## 🧠 Sobre o Projeto
+## 🔐 Arquitetura e Segurança
 
-O **NeoWeather** permite que o usuário consulte a previsão do tempo de forma rápida, prática e visualmente agradável.
-
-### ✨ Funcionalidades:
-
-* 🌍 Busca de clima por cidade
-* 🌡️ Exibição de temperatura, umidade e vento
-* 🌦️ Ícones dinâmicos conforme o clima
-* 📱 Layout responsivo (mobile, tablet e desktop)
-* ⚙️ Código organizado e escalável
-
-<br>
-
----
-
-## 🔐 Segurança da Aplicação
-
-Para evitar a exposição da API Key no front-end, foi implementado um backend com Node.js.
+Para evitar exposição da API Key no front-end, foi implementado um backend intermediário.
 
 ### 🔄 Fluxo da aplicação:
 
+```text
+Frontend → Backend → OpenWeather API
 ```
-Frontend → Backend → API OpenWeather
-```
 
-✔️ A requisição é feita pelo front-end
-✔️ O backend processa e chama a API
-✔️ A chave da API fica protegida no servidor
+* O frontend envia a requisição
+* O backend processa e consome a API
+* A chave da API permanece protegida no servidor
 
-Essa abordagem segue boas práticas de segurança utilizadas no mercado.
-
-<br>
+📌 Essa abordagem segue boas práticas utilizadas em aplicações reais.
 
 ---
 
 ## 📁 Estrutura do Projeto
 
-```
+```text
 NeoWeather/
 │
 ├── frontend/
 │   ├── assets/
-│   │    └── mockup/
 │   ├── css/
-│   │    └── style.css
 │   ├── js/
-│   │    └── script.js
 │   └── index.html
 │
 ├── backend/
@@ -99,99 +93,80 @@ NeoWeather/
 └── README.md
 ```
 
-<br>
-
 ---
 
-## ▶️ Como Rodar o Projeto
+## ▶️ Como Executar Localmente
 
-### 🔹 1. Clonar o repositório
+### 🔹 Backend
 
-```
-git clone https://github.com/Lucas-tech-silva/neo-weather
-```
-
----
-
-### 🔹 2. Rodar o backend
-
-```
+```bash
 cd backend
 npm install
 node server.js
 ```
 
-Servidor rodando em:
+Servidor local:
 
-```
-http://localhost:3000
-```
+👉 http://localhost:3000
+
+## 🌐 Aplicação em Produção
+
+O projeto já está disponível online:
+
+👉 https://neo-weather-alpha.vercel.app/
 
 ---
 
-### 🔹 3. Rodar o frontend
+### 🔹 Frontend
 
-Abra o arquivo:
+Abra:
 
 ```
 frontend/index.html
 ```
 
-ou utilize o **Live Server** no VS Code.
-
-<br>
+ou utilize o Live Server no VS Code.
 
 ---
 
 ## 📱 Responsividade
 
-O site foi desenvolvido com foco em responsividade, garantindo uma excelente experiência em:
+Aplicação adaptada para:
 
 * 📱 Smartphones
 * 📲 Tablets
 * 💻 Desktops
 
-<br>
+---
+
+## 📊 Melhorias Futuras
+
+* 🌙 Modo escuro
+* 📈 Gráficos de temperatura
+* 📅 Previsão estendida
+* ⭐ Sistema de favoritos
 
 ---
 
-## 🛠️ Autor
+## 👨‍💻 Autor
 
-Desenvolvido por **Lucas Ferreira** 💻
+**Lucas Silva**
 
 * 🌐 Portfólio: https://portif-lio-nu-two.vercel.app/
 * 💻 GitHub: https://github.com/Lucas-tech-silva
 * 🔗 LinkedIn: https://www.linkedin.com/in/lucassilva-developer/
 
-<br>
+---
+
+## 📌 Status
+
+✅ Projeto concluído e funcional
+🚀 Em constante evolução
 
 ---
 
-## 📌 Status do Projeto
-
-✅ Concluído
-
-💡 Futuras melhorias:
-
-* 🌙 Modo escuro
-* 📊 Gráficos de temperatura
-* 📅 Previsão estendida
-* ⭐ Sistema de cidades favoritas
-
-<br>
-
----
-
-## 🎉 Fun Fact
+## 💡 Insight
 
 <p align="center">
-  <i>🌤️ "Programar é dominar a arte da adaptação — assim como o clima muda constantemente, transformamos desafios em soluções que brilham como o sol após a tempestade."</i>
+  <i>"Projetos simples se tornam profissionais quando aplicamos arquitetura, segurança e boas práticas."</i>
 </p>
-
-<br>
-
-<p align="center">
-  <img src="https://media1.tenor.com/m/GtDkRSPU9CgAAAAC/cloud-weather.gif" width="300" />
-</p>
-
-<br>
