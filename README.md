@@ -162,9 +162,10 @@ Abra:
 frontend/index.html
 ```
 
-<br>
-
 ou utilize o Live Server no VS Code.
+
+
+<br>
 
 ---
 
@@ -186,7 +187,7 @@ Aplicação adaptada para:
 * 📅 Previsão estendida
 * ⚡ Histórico de cidades pesquisadas
 * 📍 Geolocalização automática
-* 
+  
 <br>
 
 ---
@@ -217,4 +218,3 @@ Aplicação adaptada para:
 <p align="center">
 <p align="center"> <i> “Um projeto se torna profissional quando une arquitetura, performance e boas práticas reais de mercado.” </i> </p>
 
-<br>
