@@ -163,7 +163,6 @@ Aplicação adaptada para:
 
 ## 📊 Melhorias Futuras
 
-* 🌙 Modo escuro
 * 📈 Gráficos de temperatura
 * 📅 Previsão estendida
 * ⚡ Histórico de cidades pesquisadas
