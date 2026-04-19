@@ -1,6 +1,6 @@
 # 🌤️ NeoWeather
 
-> Aplicação Full Stack de previsão do tempo com foco em **UX/UI**, **performance** e **segurança de dados (API protegida)**.
+> Aplicação Full Stack para consulta de previsão do tempo em tempo real, com foco em **performance, UX/UI e segurança de API**.
 
 <br>
 
@@ -9,58 +9,55 @@
 </p>
 
 <p align="center">
-  <i>Interface moderna, responsiva e intuitiva para consulta de clima em tempo real.</i>
+  <i>Interface moderna, responsiva e intuitiva para visualização de dados climáticos em tempo real.</i>
 </p>
 
 <br>
 
 ---
 
-## 🚀 Sobre o Projeto
+## 🚀 Visão Geral
 
-O **NeoWeather** é uma aplicação desenvolvida do zero com o objetivo de entregar uma experiência rápida, visualmente agradável e funcional para consulta de dados climáticos.
+O **NeoWeather** é uma aplicação full stack desenvolvida do zero para fornecer dados climáticos em tempo real de forma rápida, intuitiva e visualmente agradável.
 
-Além do front-end interativo, o projeto implementa uma **arquitetura full stack**, garantindo **segurança da API Key** e boas práticas utilizadas no mercado.
+O projeto também implementa uma arquitetura segura, garantindo que a **API Key não seja exposta no frontend**, seguindo boas práticas utilizadas em aplicações profissionais.
 
 ---
 
-## ✨ Principais Diferenciais
+## ✨ Principais Funcionalidades
 
-* 🔐 **Proteção da API Key** com backend (Node.js)
-* ⚡ **Requisições otimizadas** e resposta rápida
-* 🎨 Interface moderna com foco em UX/UI
-* 📱 **Totalmente responsivo** (mobile-first)
-* 🧱 Estrutura escalável e organizada
-* 🌐 Consumo de API real (OpenWeather)
+* 🔐 Proteção da API Key com backend intermediário (Node.js)
+* ⚡ Consultas rápidas e otimizadas de dados climáticos
+* 🎨 Interface moderna com foco em experiência do usuário (UX/UI)
+* 📱 Layout totalmente responsivo (mobile-first)
+* 🌐 Integração com API real de clima (OpenWeatherMap)
+* 🧱 Estrutura organizada e escalável
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
 ### 🎨 Frontend
-
-* **HTML5** — estrutura semântica
-* **CSS3** — layout moderno e responsivo
-* **JavaScript (ES6+)** — lógica e interatividade
+- HTML5 (estrutura semântica)
+- CSS3 (estilização responsiva)
+- JavaScript ES6+ (interatividade e consumo de API)
 
 ### ⚙️ Backend
+- Node.js (runtime JavaScript)
+- Express (criação de API e rotas)
+- dotenv (gerenciamento de variáveis de ambiente)
+- CORS (controle de acesso entre aplicações)
 
-* **Node.js** — ambiente de execução
-* **Express** — criação de rotas e API
-* **dotenv** — variáveis de ambiente
-* **CORS** — comunicação segura
-
-### 🌐 Integração
-
-* **OpenWeatherMap API** — dados climáticos em tempo real
+### 🌐 API
+- OpenWeatherMap API (dados climáticos em tempo real)
 
 ---
 
-## 🔐 Arquitetura e Segurança
+## 🔐 Arquitetura da Aplicação
 
-Para evitar exposição da API Key no front-end, foi implementado um backend intermediário.
+Para garantir segurança e boas práticas, a aplicação utiliza um backend intermediário para proteger credenciais sensíveis.
 
-### 🔄 Fluxo da aplicação:
+### Fluxo de dados:
 
 ```text
 Frontend → Backend → OpenWeather API
@@ -88,7 +85,7 @@ NeoWeather/
 ├── backend/
 │   ├── server.js
 │   ├── package.json
-│   └── .env (não versionado)
+│   └── .env
 │
 └── README.md
 ```
@@ -168,5 +165,4 @@ Aplicação adaptada para:
 ## 💡 Insight
 
 <p align="center">
-  <i>"Projetos simples se tornam profissionais quando aplicamos arquitetura, segurança e boas práticas."</i>
-</p>
+<p align="center"> <i> “Um projeto se torna profissional quando une arquitetura, performance e boas práticas reais de mercado.” </i> </p> `
