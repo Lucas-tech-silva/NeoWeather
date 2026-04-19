@@ -27,17 +27,16 @@
 
 ---
 
-<br>
-
 ## 🚀 Visão Geral
 
 O **NeoWeather** é uma aplicação full stack desenvolvida do zero para fornecer dados climáticos em tempo real de forma rápida, intuitiva e visualmente agradável.
 
 O projeto também implementa uma arquitetura segura, garantindo que a **API Key não seja exposta no frontend**, seguindo boas práticas utilizadas em aplicações profissionais.
 
+<br>
+
 ---
 
-<br>
 
 ## ✨ Principais Funcionalidades
 
@@ -47,10 +46,10 @@ O projeto também implementa uma arquitetura segura, garantindo que a **API Key 
 * 📱 Layout totalmente responsivo (mobile-first)
 * 🌐 Integração com API real de clima (OpenWeatherMap)
 * 🧱 Estrutura organizada e escalável
+  
+<br>
 
 ---
-
-<br>
 
 ## 🧠 Desafios que resolvi
 
@@ -61,10 +60,10 @@ O projeto também implementa uma arquitetura segura, garantindo que a **API Key 
 * 📡 Consumo e normalização de dados da OpenWeatherMap
 * 🚀 Deploy e configuração de variáveis de ambiente (.env)
 * 🧩 Correção de problemas de “Failed to fetch” em produção
+  
+<br>
 
 ---
-
-<br>
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -82,9 +81,9 @@ O projeto também implementa uma arquitetura segura, garantindo que a **API Key 
 ### 🌐 API
 - OpenWeatherMap API (dados climáticos em tempo real)
 
----
-
 <br>
+
+---
 
 ## 🔐 Arquitetura da Aplicação
 
@@ -126,6 +125,7 @@ NeoWeather/
 ```
 
 ---
+
 <br>
 
 ## ▶️ Como Executar Localmente
@@ -148,7 +148,9 @@ Servidor local:
 
 O projeto já está disponível online:
 
-👉 https://neo-weather-alpha.vercel.app/
+👉 https://neo-weather-iota.vercel.app/
+
+<br>
 
 ---
 
@@ -160,11 +162,11 @@ Abra:
 frontend/index.html
 ```
 
+<br>
+
 ou utilize o Live Server no VS Code.
 
 ---
-
-<br>
 
 ## 📱 Responsividade
 
@@ -173,10 +175,10 @@ Aplicação adaptada para:
 * 📱 Smartphones
 * 📲 Tablets
 * 💻 Desktops
+  
+<br>
 
 ---
-
-<br>
 
 ## 📊 Melhorias Futuras
 
@@ -184,10 +186,10 @@ Aplicação adaptada para:
 * 📅 Previsão estendida
 * ⚡ Histórico de cidades pesquisadas
 * 📍 Geolocalização automática
+* 
+<br>
 
 ---
-
-<br>
 
 ## 👨‍💻 Autor
 
@@ -197,20 +199,22 @@ Aplicação adaptada para:
 * 💻 GitHub: https://github.com/Lucas-tech-silva
 * 🔗 LinkedIn: https://www.linkedin.com/in/lucassilva-developer/
 
----
-
 <br>
+
+---
 
 ## 📌 Status
 
 ✅ Projeto concluído e funcional
 🚀 Em constante evolução
 
----
-
 <br>
+
+---
 
 ## 💡 Insight
 
 <p align="center">
 <p align="center"> <i> “Um projeto se torna profissional quando une arquitetura, performance e boas práticas reais de mercado.” </i> </p>
+
+<br>
