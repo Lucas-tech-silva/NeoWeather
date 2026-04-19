@@ -174,9 +174,9 @@ Aplicação adaptada para:
 
 **Lucas Silva**
 
-* 🌐 Portfólio: https://portif-lio-nu-two.vercel.app/
-* 💻 GitHub: https://github.com/Lucas-tech-silva
-* 🔗 LinkedIn: https://www.linkedin.com/in/lucassilva-developer/
+* 🌐 Portfólio: [Clique aqui](https://portif-lio-nu-two.vercel.app/)
+* 💻 GitHub: [Clique aqui](https://github.com/Lucas-tech-silva)
+* 🔗 LinkedIn: [Clique aqui](https://www.linkedin.com/in/lucassilva-developer/)
 
 ---
 
