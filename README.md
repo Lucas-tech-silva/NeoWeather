@@ -199,7 +199,7 @@ Aplicação adaptada para:
 * 🌐 Portfólio: https://portif-lio-nu-two.vercel.app/
 * 💻 GitHub: https://github.com/Lucas-tech-silva
 * 🔗 LinkedIn: https://www.linkedin.com/in/lucassilva-developer/
-* 📧 Email: lucassilva1710@yahoo.com
+* 📧 Email: [lucassilva1710@yahoo.com](mailto:lucassilva1710@yahoo.com?subject=Oportunidade&body=Olá%20Lucas,%0A%0AVi%20o%20projeto%20NeoWeather%20e%20gostaria%20de%20falar%20sobre%20uma%20oportunidade.%0A)
 
 <br>
 
