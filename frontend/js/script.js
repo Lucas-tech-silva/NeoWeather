@@ -136,48 +136,19 @@ function updateDate() {
 }
 
 function searchWeather(eventOrCity = null) {
-  // Verifica se o parâmetro é um evento (clique/tecla) ou uma string
-  let city;
+  const city = (eventOrCity && typeof eventOrCity === 'object' 
+    ? document.getElementById("city-input").value.trim() 
+    : eventOrCity || document.getElementById("city-input").value.trim());
   
-  if (eventOrCity && typeof eventOrCity === 'object') {
-
-    city = document.getElementById("city-input").value.trim();
-  } else {
-    city = eventOrCity || document.getElementById("city-input").value.trim();
-  }
-
   if (!city) return;
 
   const weatherDisplay = document.getElementById("weather-display");
-  const loading = document.getElementById("loading");
+  weatherDisplay.innerHTML = `<div class="loading" id="loading"><div class="loading-spinner"></div></div>`;
 
-  weatherDisplay.innerHTML = `
-    <div class="loading" id="loading">
-      <div class="loading-spinner"></div>
-    </div>
-  `;
-
-  const apiUrl = `https://neoweather.onrender.com/clima?cidade=${city}`;
-
-  fetch(apiUrl)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Cidade não encontrada");
-      }
-      return response.json();
-    })
-    .then(data => {
-      displayWeather(data);
-    })
-    .catch(error => {
-      weatherDisplay.innerHTML = `
-        <div class="error-message">
-          <i class="fas fa-exclamation-triangle"></i>
-          <p>${error.message}</p>
-          <p>Tente novamente com outro nome de cidade.</p>
-        </div>
-      `;
-    });
+  fetch(`https://neoweather.onrender.com/clima?cidade=${city}`)
+    .then(response => !response.ok ? Promise.reject("Cidade não encontrada") : response.json())
+    .then(displayWeather)
+    .catch(error => weatherDisplay.innerHTML = `<div class="error-message"><i class="fas fa-exclamation-triangle"></i><p>${error}</p><p>Tente novamente com outro nome de cidade.</p></div>`);
 }
 
 
