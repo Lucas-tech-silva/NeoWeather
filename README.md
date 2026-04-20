@@ -57,7 +57,6 @@ O projeto também implementa uma arquitetura segura, garantindo que a **API Key 
 * 🌐 Deploy do backend no Render e frontend na Vercel
 * ⚙️ Configuração de CORS para comunicação entre domínios diferentes
 * ❌ Tratamento de erro para cidades inválidas na API
-* 📡 Consumo e normalização de dados da OpenWeatherMap
 * 🚀 Deploy e configuração de variáveis de ambiente (.env)
 * 🧩 Correção de problemas de “Failed to fetch” em produção
   
