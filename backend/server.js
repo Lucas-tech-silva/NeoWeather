@@ -18,7 +18,7 @@ app.get("/clima", async (req, res) => {
 
   try {
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${process.env.OPENWEATHER_API_KEY}&units=metric&lang=pt_br`
+      `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${process.env.OPENWEATHER_API_KEY}&units=metric&lang=pt_br`,
     );
 
     if (!response.ok) {
@@ -30,6 +30,11 @@ app.get("/clima", async (req, res) => {
   } catch (error) {
     res.status(500).json({ erro: "Erro ao buscar clima" });
   }
+});
+
+// 🔥 rota ping
+app.get("/ping", (req, res) => {
+  res.status(200).send("OK");
 });
 
 // iniciar servidor
