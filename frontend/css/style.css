@@ -27,7 +27,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 0;
-  pointer-events: none; /* Isso permite cliques passarem pelo canvas */
+  pointer-events: none; 
 }
 
 .container {
@@ -104,6 +104,24 @@ header {
 .search-btn:hover {
   transform: scale(1.1);
   box-shadow: 0 0 15px rgba(0, 247, 255, 0.6);
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none; 
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .weather-display {

@@ -1,6 +1,18 @@
 # 🌤️ NeoWeather
 
-> Aplicação Full Stack para consulta de previsão do tempo em tempo real, com foco em **performance, UX/UI e segurança de API**.
+> Aplicação Full Stack para consulta de previsão do tempo em tempo real, com foco em **performance, integração de APIs e responsividade**.
+
+<br>
+
+<div align="center">
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![API](https://img.shields.io/badge/API--OpenWeather-blue?style=for-the-badge)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-black?style=for-the-badge&logo=express&logoColor=white)
+
+
+</div>
 
 <br>
 
@@ -22,7 +34,10 @@ O **NeoWeather** é uma aplicação full stack desenvolvida do zero para fornece
 
 O projeto também implementa uma arquitetura segura, garantindo que a **API Key não seja exposta no frontend**, seguindo boas práticas utilizadas em aplicações profissionais.
 
+<br>
+
 ---
+
 
 ## ✨ Principais Funcionalidades
 
@@ -32,6 +47,21 @@ O projeto também implementa uma arquitetura segura, garantindo que a **API Key 
 * 📱 Layout totalmente responsivo (mobile-first)
 * 🌐 Integração com API real de clima (OpenWeatherMap)
 * 🧱 Estrutura organizada e escalável
+  
+<br>
+
+---
+
+## 🧠 Desafios que resolvi
+
+* 🔥 Integração entre frontend e backend sem expor a API Key
+* 🌐 Deploy do backend no Render e frontend na Vercel
+* ⚙️ Configuração de CORS para comunicação entre domínios diferentes
+* ❌ Tratamento de erro para cidades inválidas na API
+* 🚀 Deploy e configuração de variáveis de ambiente (.env)
+* 🧩 Correção de problemas de “Failed to fetch” em produção
+  
+<br>
 
 ---
 
@@ -51,6 +81,8 @@ O projeto também implementa uma arquitetura segura, garantindo que a **API Key 
 ### 🌐 API
 - OpenWeatherMap API (dados climáticos em tempo real)
 
+<br>
+
 ---
 
 ## 🔐 Arquitetura da Aplicação
@@ -68,6 +100,8 @@ Frontend → Backend → OpenWeather API
 * A chave da API permanece protegida no servidor
 
 📌 Essa abordagem segue boas práticas utilizadas em aplicações reais.
+
+<br>
 
 ---
 
@@ -92,6 +126,8 @@ NeoWeather/
 
 ---
 
+<br>
+
 ## ▶️ Como Executar Localmente
 
 ### 🔹 Backend
@@ -106,11 +142,15 @@ Servidor local:
 
 👉 http://localhost:3000
 
+<br>
+
 ## 🌐 Aplicação em Produção
 
 O projeto já está disponível online:
 
-👉 https://neo-weather-alpha.vercel.app/
+👉 https://neo-weather-iota.vercel.app/
+
+<br>
 
 ---
 
@@ -124,6 +164,9 @@ frontend/index.html
 
 ou utilize o Live Server no VS Code.
 
+
+<br>
+
 ---
 
 ## 📱 Responsividade
@@ -133,16 +176,21 @@ Aplicação adaptada para:
 * 📱 Smartphones
 * 📲 Tablets
 * 💻 Desktops
+  
+<br>
 
 ---
 
 ## 📊 Melhorias Futuras
 
-* 🌙 Modo escuro
 * 📈 Gráficos de temperatura
 * 📅 Previsão estendida
 * ⚡ Histórico de cidades pesquisadas
 * 📍 Geolocalização automática
+
+=======
+  
+<br>
 
 ---
 
@@ -150,9 +198,12 @@ Aplicação adaptada para:
 
 **Lucas Silva**
 
-* 🌐 Portfólio: https://portif-lio-nu-two.vercel.app/
+* 🌐 Portfólio: https://lucas-portfolio-flax.vercel.app/
 * 💻 GitHub: https://github.com/Lucas-tech-silva
 * 🔗 LinkedIn: https://www.linkedin.com/in/lucassilva-developer/
+* 📧 Email: [lucassilva1710@yahoo.com](mailto:lucassilva1710@yahoo.com?subject=Oportunidade&body=Olá%20Lucas,%0A%0AVi%20o%20projeto%20NeoWeather%20e%20gostaria%20de%20falar%20sobre%20uma%20oportunidade.%0A)
+
+<br>
 
 ---
 
@@ -161,9 +212,12 @@ Aplicação adaptada para:
 ✅ Projeto concluído e funcional
 🚀 Em constante evolução
 
+<br>
+
 ---
 
 ## 💡 Insight
 
 <p align="center">
-<p align="center"> <i> “Um projeto se torna profissional quando une arquitetura, performance e boas práticas reais de mercado.” </i> </p>
+<p align="center"> “Um projeto se torna profissional quando une arquitetura, performance e boas práticas reais de mercado.” </p>
+
