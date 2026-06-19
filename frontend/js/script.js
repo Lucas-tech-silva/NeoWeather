@@ -135,42 +135,20 @@ function updateDate() {
   );
 }
 
-function searchWeather(defaultCity = null) {
-  const city =
-    defaultCity || document.getElementById("city-input").value.trim();
-
+function searchWeather(eventOrCity = null) {
+  const city = (eventOrCity && typeof eventOrCity === 'object' 
+    ? document.getElementById("city-input").value.trim() 
+    : eventOrCity || document.getElementById("city-input").value.trim());
+  
   if (!city) return;
 
   const weatherDisplay = document.getElementById("weather-display");
-  const loading = document.getElementById("loading");
+  weatherDisplay.innerHTML = `<div class="loading" id="loading"><div class="loading-spinner"></div></div>`;
 
-  weatherDisplay.innerHTML = `
-                <div class="loading" id="loading">
-                    <div class="loading-spinner"></div>
-                </div>
-            `;
-
-  const apiUrl = `https://neoweather.onrender.com/clima?cidade=${city}`;
-
-  fetch(apiUrl)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Cidade não encontrada");
-      }
-      return response.json();
-    })
-    .then((data) => {
-      displayWeather(data);
-    })
-    .catch((error) => {
-      weatherDisplay.innerHTML = `
-            <div class="error-message">
-                <i class="fas fa-exclamation-triangle"></i>
-                <p>${error.message}</p>
-                <p>Tente novamente com outro nome de cidade.</p>
-            </div>
-        `;
-    });
+  fetch(`https://neoweather.onrender.com/clima?cidade=${city}`)
+    .then(response => !response.ok ? Promise.reject("Cidade não encontrada") : response.json())
+    .then(displayWeather)
+    .catch(error => weatherDisplay.innerHTML = `<div class="error-message"><i class="fas fa-exclamation-triangle"></i><p>${error}</p><p>Tente novamente com outro nome de cidade.</p></div>`);
 }
 
 function displayWeather(data) {
@@ -178,7 +156,6 @@ function displayWeather(data) {
   const iconCode = data.weather[0].icon;
   const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
-  // Mapear ícones para Font Awesome
   const iconMap = {
     "01d": "fa-sun",
     "01n": "fa-moon",

@@ -141,7 +141,8 @@ Aplicação adaptada para:
 * 🌙 Modo escuro
 * 📈 Gráficos de temperatura
 * 📅 Previsão estendida
-* ⭐ Sistema de favoritos
+* ⚡ Histórico de cidades pesquisadas
+* 📍 Geolocalização automática
 
 ---
 
