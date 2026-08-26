@@ -7,11 +7,11 @@
 <div align="center">
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Cloudflare Workers](https://img.shields.io/badge/Cloudflare%20Workers-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
-![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)
-![OpenWeather](https://img.shields.io/badge/OpenWeather-API-blue?style=for-the-badge)
+![Vitest](https://img.shields.io/badge/Vitest-00C853?style=for-the-badge&logo=vitest&logoColor=white)
+![OpenWeather API](https://img.shields.io/badge/OpenWeather_API-blue?style=for-the-badge)
 
 </div>
 
