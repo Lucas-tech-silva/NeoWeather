@@ -1,16 +1,22 @@
 # 🌤️ NeoWeather
 
-> Aplicação Full Stack para consulta de previsão do tempo em tempo real, com foco em **performance, integração de APIs e responsividade**.
+> Aplicação web para consulta de dados climáticos em tempo real, com foco em **performance, integração de APIs e responsividade**.
 
 <br>
 
 <div align="center">
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![API](https://img.shields.io/badge/API--OpenWeather-blue?style=for-the-badge)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-black?style=for-the-badge&logo=express&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+![Cloudflare Workers](https://img.shields.io/badge/Cloudflare%20Workers-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
+
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)
+
+![OpenWeather](https://img.shields.io/badge/OpenWeather-API-blue?style=for-the-badge)
 
 </div>
 
@@ -30,37 +36,46 @@
 
 ## 🚀 Visão Geral
 
-O **NeoWeather** é uma aplicação full stack desenvolvida do zero para fornecer dados climáticos em tempo real de forma rápida, intuitiva e visualmente agradável.
+O **NeoWeather** é uma aplicação web desenvolvida do zero para fornecer dados climáticos em tempo real de forma rápida, intuitiva e visualmente agradável.
 
-O projeto também implementa uma arquitetura segura, garantindo que a **API Key não seja exposta no frontend**, seguindo boas práticas utilizadas em aplicações profissionais.
+O projeto utiliza uma arquitetura com **frontend separado da camada de API**, mantendo a chave da OpenWeather protegida no ambiente do **Cloudflare Workers**, sem expô-la diretamente no código do frontend.
+
+A aplicação consome dados da **OpenWeather API** através de uma API intermediária hospedada no Cloudflare Workers.
 
 <br>
 
 ---
 
-
 ## ✨ Principais Funcionalidades
 
-* 🔐 Proteção da API Key com backend intermediário (Node.js)
-* ⚡ Consultas rápidas e otimizadas de dados climáticos
-* 🎨 Interface moderna com foco em experiência do usuário (UX/UI)
-* 📱 Layout totalmente responsivo (mobile-first)
-* 🌐 Integração com API real de clima (OpenWeatherMap)
-* 🧱 Estrutura organizada e escalável
-  
+- 🔐 Proteção da API Key através do Cloudflare Workers
+- ⚡ Consultas rápidas de dados climáticos
+- 🌐 Integração com a OpenWeather API
+- 🎨 Interface moderna com foco em experiência do usuário (UX/UI)
+- 📱 Layout totalmente responsivo
+- 🔎 Pesquisa de cidades em tempo real
+- ❌ Tratamento de erros para cidades inválidas
+- 🌤️ Exibição de informações climáticas atuais
+- 📊 Exibição de temperatura, sensação térmica, umidade, vento e pressão
+- 🧱 Estrutura organizada e separação entre frontend e API
+
 <br>
 
 ---
 
 ## 🧠 Desafios que resolvi
 
-* 🔥 Integração entre frontend e backend sem expor a API Key
-* 🌐 Deploy do backend no Render e frontend na Vercel
-* ⚙️ Configuração de CORS para comunicação entre domínios diferentes
-* ❌ Tratamento de erro para cidades inválidas na API
-* 🚀 Deploy e configuração de variáveis de ambiente (.env)
-* 🧩 Correção de problemas de “Failed to fetch” em produção
-  
+- 🔥 Integração entre frontend e uma API intermediária sem expor a API Key
+- ☁️ Migração da API de um servidor Node.js/Express para Cloudflare Workers
+- ⚙️ Configuração de CORS para comunicação entre frontend e API
+- 🌐 Integração com a OpenWeather API
+- ❌ Tratamento de erros para cidades inexistentes
+- 🔒 Gerenciamento seguro da variável `OPENWEATHER_API_KEY`
+- 🧩 Correção de problemas de comunicação entre frontend e API em produção
+- 🚀 Deploy do frontend e da API em serviços independentes
+- 🧪 Implementação de testes para a API
+- 🛠️ Configuração do projeto utilizando Wrangler
+
 <br>
 
 ---
@@ -68,18 +83,26 @@ O projeto também implementa uma arquitetura segura, garantindo que a **API Key 
 ## 🛠️ Tecnologias Utilizadas
 
 ### 🎨 Frontend
-- HTML5 (estrutura semântica)
-- CSS3 (estilização responsiva)
-- JavaScript ES6+ (interatividade e consumo de API)
 
-### ⚙️ Backend
-- Node.js (runtime JavaScript)
-- Express (criação de API e rotas)
-- dotenv (gerenciamento de variáveis de ambiente)
-- CORS (controle de acesso entre aplicações)
+- HTML5 — estrutura semântica
+- CSS3 — estilização e responsividade
+- JavaScript ES6+ — lógica, interatividade e consumo da API
+- Particles.js — efeitos visuais
+- Font Awesome — ícones
 
-### 🌐 API
-- OpenWeatherMap API (dados climáticos em tempo real)
+### ⚙️ API / Backend
+
+- Cloudflare Workers — execução da API intermediária
+
+- JavaScript — desenvolvimento da lógica da API
+
+- Wrangler — desenvolvimento, configuração e deploy do Worker
+
+- Vitest — testes automatizados
+
+### 🌐 API Externa
+
+- OpenWeather API — fornecimento dos dados climáticos em tempo real
 
 <br>
 
@@ -87,19 +110,19 @@ O projeto também implementa uma arquitetura segura, garantindo que a **API Key 
 
 ## 🔐 Arquitetura da Aplicação
 
-Para garantir segurança e boas práticas, a aplicação utiliza um backend intermediário para proteger credenciais sensíveis.
+Para proteger as credenciais da OpenWeather API, o projeto utiliza o **Cloudflare Workers como camada intermediária entre o frontend e a API externa**.
 
 ### Fluxo de dados:
 
 ```text
-Frontend → Backend → OpenWeather API
+Frontend
+   ↓
+Cloudflare Workers
+   ↓
+OpenWeather API
 ```
 
-* O frontend envia a requisição
-* O backend processa e consome a API
-* A chave da API permanece protegida no servidor
-
-📌 Essa abordagem segue boas práticas utilizadas em aplicações reais.
+📌 A chave da OpenWeather API permanece protegida no ambiente do Cloudflare Workers e não é exposta diretamente no código do frontend.
 
 <br>
 
@@ -112,14 +135,31 @@ NeoWeather/
 │
 ├── frontend/
 │   ├── assets/
+│   │   ├── CV/
+│   │   └── mockup/
+│   │
 │   ├── css/
+│   │   └── style.css
+│   │
 │   ├── js/
+│   │   └── script.js
+│   │
 │   └── index.html
 │
-├── backend/
-│   ├── server.js
+├── neoweather-api/
+│   ├── src/
+│   │   └── index.js
+│   │
+│   ├── test/
+│   │   └── index.spec.js
+│   │
+│   ├── .editorconfig
+│   ├── .gitignore
+│   ├── .prettierrc
+│   ├── package-lock.json
 │   ├── package.json
-│   └── .env
+│   ├── vitest.config.mjs
+│   └── wrangler.jsonc
 │
 └── README.md
 ```
@@ -130,17 +170,15 @@ NeoWeather/
 
 ## ▶️ Como Executar Localmente
 
-### 🔹 Backend
+### 🔹 API
+
+Entre na pasta da API:
 
 ```bash
-cd backend
-npm install
-node server.js
+cd neoweather-api
+
+npx wrangler dev
 ```
-
-Servidor local:
-
-👉 http://localhost:3000
 
 <br>
 
@@ -164,7 +202,6 @@ frontend/index.html
 
 ou utilize o Live Server no VS Code.
 
-
 <br>
 
 ---
@@ -173,21 +210,23 @@ ou utilize o Live Server no VS Code.
 
 Aplicação adaptada para:
 
-* 📱 Smartphones
-* 📲 Tablets
-* 💻 Desktops
-  
+- 📱 Smartphones
+- 📲 Tablets
+- 💻 Desktops
+
 <br>
 
 ---
 
 ## 📊 Melhorias Futuras
 
-* 📈 Gráficos de temperatura
-* 📅 Previsão estendida
-* ⚡ Histórico de cidades pesquisadas
-* 📍 Geolocalização automática
-  
+- 📈 Gráficos de temperatura
+- 📅 Previsão estendida
+- ⚡ Histórico de cidades pesquisadas
+- 📍 Geolocalização automática
+
+=======
+
 <br>
 
 ---
@@ -196,13 +235,10 @@ Aplicação adaptada para:
 
 **Lucas Silva**
 
-* 🌐 Portfólio: https://lucas-portfolio-flax.vercel.app/
-  
-* 💻 GitHub: https://github.com/Lucas-tech-silva
-  
-* 🔗 LinkedIn: https://www.linkedin.com/in/lucassilva-developer/
-  
-* 📧 Email: [lucassilva1710@yahoo.com](mailto:lucassilva1710@yahoo.com?subject=Oportunidade&body=Olá%20Lucas,%0A%0AVi%20o%20projeto%20NeoWeather%20e%20gostaria%20de%20falar%20sobre%20uma%20oportunidade.%0A)
+- 🌐 Portfólio: https://lucas-portfolio-flax.vercel.app/
+- 💻 GitHub: https://github.com/Lucas-tech-silva
+- 🔗 LinkedIn: https://www.linkedin.com/in/lucassilva-developer/
+- 📧 Email: [lucassilva1710@yahoo.com](mailto:lucassilva1710@yahoo.com?subject=Oportunidade&body=Olá%20Lucas,%0A%0AVi%20o%20projeto%20NeoWeather%20e%20gostaria%20de%20falar%20sobre%20uma%20oportunidade.%0A)
 
 <br>
 
@@ -211,6 +247,7 @@ Aplicação adaptada para:
 ## 📌 Status
 
 ✅ Projeto concluído e funcional
+
 🚀 Em constante evolução
 
 <br>
@@ -219,6 +256,4 @@ Aplicação adaptada para:
 
 ## 💡 Insight
 
-<p align="center">
 <p align="center"> “Um projeto se torna profissional quando une arquitetura, performance e boas práticas reais de mercado.” </p>
-
